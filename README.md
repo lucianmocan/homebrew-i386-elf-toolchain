@@ -1,4 +1,4 @@
-### How to compile xv6 x86 on macOS ?
+### How to compile xv6 x86_32 on macOS ?
 
 1. Install the cross-compiler and qemu : 
 ```
