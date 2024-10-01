@@ -1,8 +1,8 @@
 class I386ElfGcc < Formula
   desc "GNU Compiler Collection targetting i386-elf"
   homepage "https://gcc.gnu.org"
-  url "https://bigsearcher.com/mirrors/gcc/gcc-14.1.0/gcc-14.1.0.tar.xz"
-  sha256 "9cf7cb363621ce7a48fbde61232047561793748e6c9eba5af4d9a568570e40e0"
+  url "https://ftp.gwdg.de/pub/misc/gcc/releases/gcc-14.1.0/gcc-14.1.0.tar.xz"
+  sha256 "e283c654987afe3de9d8080bc0bd79534b5ca0d681a73a11ff2b5d3767426840"
   revision 1
 
   depends_on "gmp" => :build
