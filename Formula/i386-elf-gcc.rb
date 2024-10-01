@@ -8,7 +8,7 @@ class I386ElfGcc < Formula
   depends_on "gmp" => :build
   depends_on "mpfr" => :build
   depends_on "libmpc"
-  depends_on "nativeos/i386-elf-toolchain/i386-elf-binutils"
+  depends_on "lucianmocan/i386-elf-toolchain/i386-elf-binutils"
 
   def install
     mkdir "gcc-build" do
@@ -29,7 +29,7 @@ class I386ElfGcc < Formula
       # GCC needs this folder in #{prefix} in order to see the binutils.
       # It doesn't look for i386-elf-as on $PREFIX/bin. Rather, it looks
       # for as on $PREFIX/$TARGET/bin/ ($PREFIX/i386-elf/bin/as).
-      binutils = Formula["nativeos/i386-elf-toolchain/i386-elf-binutils"].prefix
+      binutils = Formula["lucianmocan/i386-elf-toolchain/i386-elf-binutils"].prefix
       ln_sf "#{binutils}/i386-elf", "#{prefix}/i386-elf"
     end
   end
@@ -41,7 +41,7 @@ class I386ElfGcc < Formula
     }
     DATA
     system "#{bin}/i386-elf-gcc", "-c", "program.c"
-    binutils = Formula["nativeos/i386-elf-toolchain/i386-elf-binutils"].prefix
+    binutils = Formula["lucianmocan/i386-elf-toolchain/i386-elf-binutils"].prefix
     assert_match "file format elf32-i386", shell_output("#{binutils}/bin/i386-elf-objdump -D program.o")
   end
 end
