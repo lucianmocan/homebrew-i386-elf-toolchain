@@ -1,7 +1,7 @@
 class I386ElfGcc < Formula
   desc "GNU Compiler Collection targetting i386-elf"
   homepage "https://gcc.gnu.org"
-  url "https://ftp.gnu.org/gnu/gcc/gcc-14.1.0/gcc-14.1.0.tar.xz"
+  url "ftp://ftp.irisa.fr/pub/mirrors/gcc.gnu.org/gcc/gcc-14.1.0/gcc-14.1.0.tar.xz"
   sha256 "e283c654987afe3de9d8080bc0bd79534b5ca0d681a73a11ff2b5d3767426840"
   revision 1
 
