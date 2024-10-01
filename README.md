@@ -6,10 +6,11 @@
     brew install lucianmocan/i386-elf-toolchain/i386-elf-binutils lucianmocan/i386-elf-toolchain/i386-elf-gcc
     brew install qemu
 ```
+2. Go in the `xv6-public` directory.
 2. Open the `Makefile` and uncomment `TOOLPREFIX` after the comment `Cross-compiling (e.g., on Mac OS X)`. Set `TOOLPREFIX=i386-elf-`.
-3. Go in the `xv6-public` directory and run `make`.
+3. Run `make`.
 4. Then `make qemu`.
-5. well done!
+5. Well done!
 
 
 # i386-elf-toolchain tap
