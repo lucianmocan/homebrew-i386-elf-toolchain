@@ -14,7 +14,6 @@ class I386ElfGdb < Formula
   
     system "gmake", "MAKEINFO=true"
     system "gmake", "install", "MAKEINFO=true"
-  end
 
     # Conflict with i386-elf-binutils
     rm_rf info
