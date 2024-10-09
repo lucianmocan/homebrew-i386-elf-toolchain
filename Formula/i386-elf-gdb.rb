@@ -9,7 +9,8 @@ class I386ElfGdb < Formula
     system "./configure", "--prefix=#{prefix}",
                           "--target=i386-elf",
                           "--program-prefix=i386-elf-",
-                          "--disable-werror"
+                          "--disable-werror",
+                          "--disable-doc"
 
     system "gmake"
     system "gmake", "install"
