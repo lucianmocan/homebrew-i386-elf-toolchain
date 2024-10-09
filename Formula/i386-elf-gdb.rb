@@ -8,6 +8,7 @@ class I386ElfGdb < Formula
   def install
     system "./configure", "--prefix=#{prefix}",
                           "--target=i386-elf",
+                          "--enable-targets=all",
                           "--program-prefix=i386-elf-",
                           "--disable-werror",
                           "--disable-doc"
