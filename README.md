@@ -11,6 +11,7 @@
 3. Run `make`.
 4. Then `make qemu`.
 5. Well done!
+6. If you want to use `gdb` do: `brew install i386-elf-gdb` (the `gdb` provided in the `nativeos` formulae doesn't work with the `elf32-i386` symbol format). Then `make qemu` and in another Terminal, in the same folder: `i386-elf-gdb`.
 
 
 # i386-elf-toolchain tap
