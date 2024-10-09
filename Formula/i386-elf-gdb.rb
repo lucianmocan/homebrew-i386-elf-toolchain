@@ -11,9 +11,10 @@ class I386ElfGdb < Formula
                           "--program-prefix=i386-elf-",
                           "--disable-werror",
                           "--disable-doc"
-
-    system "gmake"
-    system "gmake", "install"
+  
+    system "gmake", "MAKEINFO=true"
+    system "gmake", "install", "MAKEINFO=true"
+  end
 
     # Conflict with i386-elf-binutils
     rm_rf info
